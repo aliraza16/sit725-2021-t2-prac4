@@ -34,6 +34,18 @@ listProjects = (projects) =>{
 
     projects.forEach(project => {
         console.log(project);
+
+      let item =  '<div class="row">'
+       '<div class="col s12"><p>'+project.imageUrl+'</p></div>' +
+    '<div class="col s12 m4 l2"><p>'+project.title+'</p></div>' +
+    '<div class="col s12 m4 l8"><p>'+project.videoUrl+'</p></div>' +
+    '<div class="col s12 m4 l2"><p>'+project.author+'</p></div>' +
+  '</div>' +
+  '<div class="row">' +
+    '<div class="col s12 m6 l3"><p>'+project.description+'</p></div>' +
+    '<div class="col s12 m6 l3"><p>'+project.title+'</p></div>' 
+    
+           
         
 
     });
